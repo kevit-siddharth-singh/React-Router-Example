@@ -2,12 +2,12 @@ import React from "react";
 import "./_404_Page.css";
 import { NavLink } from "react-router-dom";
 import HomePage from "./HomePage";
-
-
+import MainHeader from "../components/MainHeader";
 
 const _404_Page = () => {
   return (
     <div className="not-found">
+      <MainHeader />
       <div className="container">
         <div className="gif">
           <img src="https://i.postimg.cc/2yrFyxKv/giphy.gif" alt="gif_ing" />
