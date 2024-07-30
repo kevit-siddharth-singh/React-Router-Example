@@ -1,5 +1,10 @@
 import React from "react";
 import "./_404_Page.css";
+import { NavLink } from "react-router-dom";
+import HomePage from "./HomePage";
+
+
+
 const _404_Page = () => {
   return (
     <div className="not-found">
@@ -12,11 +17,11 @@ const _404_Page = () => {
           <p>
             ...maybe the page you're looking for is not found or never existed.
           </p>
-          <a href="https://www.google.co.in/" target="blank">
+          <NavLink to="/">
             <button>
               Back to home <i className="far fa-hand-point-right" />
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
